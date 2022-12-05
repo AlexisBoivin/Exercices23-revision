@@ -1,0 +1,19 @@
+:root{
+    --couleur-background: #282c34;
+    --couleur-texte: #e3e7ed;
+    --couleur-texte-bleu: #169fe3;
+    --couleur-background-bouton: #3c3f49;
+    --couleur-background-bouton-select: rgba(22,159,227,0.7);
+    --couleur-background-bouton-hover: #3794c3;
+}
+@font-face{
+    font-family: "MaxImpact";
+    src:url("ex23_ressource/webfonts/Maximum-Impact.ttf");
+}
+.font{
+    font-family: "MaxImpact";
+}
+html{
+    background-color: var(--couleur-background);
+    color: var(--couleur-texte);
+}
