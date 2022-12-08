@@ -1,3 +1,7 @@
+@font-face{
+    font-family: "MaxImpact";
+    src:url("ex23_ressource/webfonts/Maximum-Impact.ttf");
+}
 :root{
     --couleur-background: #282c34;
     --couleur-texte: #e3e7ed;
@@ -6,14 +10,61 @@
     --couleur-background-bouton-select: rgba(22,159,227,0.7);
     --couleur-background-bouton-hover: #3794c3;
 }
-@font-face{
-    font-family: "MaxImpact";
-    src:url("ex23_ressource/webfonts/Maximum-Impact.ttf");
-}
+
 .font{
     font-family: "MaxImpact";
 }
 html{
     background-color: var(--couleur-background);
     color: var(--couleur-texte);
+    margin: 30px;
+}
+#container{
+    display: grid;
+    grid-template-columns: 60%, 1fr;
+    grid-template-rows: 1;
+    grid-gap:30px;
+    grid-template-areas:
+    "item1 item2";
+}
+#grosseColonne{
+    grid-area: item1;
+}
+#petiteColonne{
+    grid-area: item2;
+}
+#images{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.fa-heart{
+    color:var(--couleur-texte-bleu)
+}
+#icon{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:10px;
+}
+.item{
+    transition: 0s;
+}
+.item:hover{
+    transform: scale(1.2);
+}
+.hidden{
+    display: none;
+}
+.selected{
+    background-color: var(--couleur-background-bouton-select);
+}
+
+
+@media (max-resolution: 900px){
+    #container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }

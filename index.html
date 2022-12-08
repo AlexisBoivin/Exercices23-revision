@@ -8,55 +8,70 @@
             <script src="https://kit.fontawesome.com/87fbf8b933.js" crossorigin="anonymous"></script>
         </head>
         <body>
-           <div>
-            <div>
+           <div id="container">
+            <div id="grosseColonne">
                 <header><img src="css/ex23_ressource/images/entete_opaque.png"></header>
                 <p class="font">Lot de livres</p>
                 <p>Filtre de lots</p>
-                <button>Lot complet de 14 articles</button>
-                <button>Lot de 10 articles</button>
-                <button>Lot de 5 articles</button>
-                <h1>Payez au moins 24,37 $CA pour ces 14 articles</h1>
-                <div>
-                    <img src="css/ex23_ressource/images/livres/livre01.avif">
-                    <p>Angular Up & Running</p>
-                    <img src="css/ex23_ressource/images/livres/livre02.avif">
-                    <p>HTML5 Hacks</p>
-                    <img src="css/ex23_ressource/images/livres/livre03.avif">
-                    <p>DataùVisualization with Python & JavaScript</p>
-                    <img src="css/ex23_ressource/images/livres/livre04.avif">
-                    <p>Learning PHP, MySQL & JavaScript</p>
-                    <img src="css/ex23_ressource/images/livres/livre05.avif">
-                    <p>Flask Web Development</p>
-                    <img src="css/ex23_ressource/images/livres/livre06.avif">
-                    <p>Learning GraphQL</p>
-                    <img src="css/ex23_ressource/images/livres/livre07.avif">
-                    <p>Distributed system with Node.js</p>
-                    <img src="css/ex23_ressource/images/livres/livre08.avif">
-                    <p>Programming PHP</p>
-                    <img src="css/ex23_ressource/images/livres/livre09.avif">
-                    <p>Learning JavaScript</p>
-                    <img src="css/ex23_ressource/images/livres/livre10.avif">
-                    <p>Programming TypeScript</p>
-                    <img src="css/ex23_ressource/images/livres/livre11.avif">
-                    <p>Multithreaded JavaScript</p>
-                    <img src="css/ex23_ressource/images/livres/livre12.avif">
-                    <p>Effective TypeScript</p>
-                    <img src="css/ex23_ressource/images/livres/livre13.avif">
-                    <p>React Cookbook</p>
-                    <img src="css/ex23_ressource/images/livres/livre14.avif">
-                    <p>Learning PHP, MySQL, & JavaScript</p>
+                <button id="grosLot">Lot complet de 14 articles</button>
+                <button id="moyenLot">Lot de 10 articles</button>
+                <button id="petitLot">Lot de 5 articles</button>
+                <h1 id="texte">Payez au moins 24,37 $CA pour ces 14 articles</h1>
+                <div id="images">
+                    <div class="item" data-lot="3"><img src="css/ex23_ressource/images/livres/livre01.avif">
+                    <div>Angular Up & Running</div></div>
+                    <div class="item" data-lot="3"><img src="css/ex23_ressource/images/livres/livre02.avif">
+                    <div>HTML5 Hacks</div></div>
+                <div class="item" data-lot="3"><img src="css/ex23_ressource/images/livres/livre03.avif">
+                <div>Data Visualization with Python & JavaScript</div></div>
+                <div class="item" data-lot="3"><img src="css/ex23_ressource/images/livres/livre04.avif">
+                    <div >Learning PHP, MySQL & JavaScript</div></div>
+                    <div class="item" data-lot="3"><img src="css/ex23_ressource/images/livres/livre05.avif">
+                    <div>Flask Web Development</div></div>
+                    <div class="item" data-lot="2"><img src="css/ex23_ressource/images/livres/livre06.avif">
+                    <div>Learning GraphQL</div></div>
+                    <div class="item" data-lot="2"><img src="css/ex23_ressource/images/livres/livre07.avif">
+                    <div>Distributed system with Node.js</div></div>
+                    <div class="item" data-lot="2"><img src="css/ex23_ressource/images/livres/livre08.avif">
+                    <div>Programming PHP</div></div>
+                    <div class="item" data-lot="2"><img src="css/ex23_ressource/images/livres/livre09.avif">
+                    <div>Learning JavaScript</div></div>
+                    <div class="item" data-lot="2"><img src="css/ex23_ressource/images/livres/livre10.avif">
+                    <div>Programming TypeScript</div></div>
+                    <div class="item" data-lot="1"><img src="css/ex23_ressource/images/livres/livre11.avif">
+                    <div>Multithreaded JavaScript</div></div>
+                    <div class="item" data-lot="1"><img src="css/ex23_ressource/images/livres/livre12.avif">
+                    <div>Effective TypeScript</div></div>
+                    <div class="item" data-lot="1"><img src="css/ex23_ressource/images/livres/livre13.avif">
+                    <div>React Cookbook</div></div>
+                    <div class="item" data-lot="1"><img src="css/ex23_ressource/images/livres/livre14.avif">
+                    <div>Learning PHP, MySQL, & JavaScript</div></div>
                 </div>
                 
             </div>
-            <div>
+            <div id="petiteColonne">
                 <h2 class="font">Maitrisez le développement d'application Web</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <i class="fas fa-dollar-sign"></i><p>Payez 1,35 $CA ou plus</p>
-                <i class="fas fa-people-carry"></i><p>6 534 Vendus</p>
-                <i class="fas fa-book-open"></i><p>Utiliser sur n'importe quel appareil</p>
-                <i class="fas fa-file"></i><p>PDF, ePUB et MOBI</p>
-                <i class="fas fa-heart"></i>
+                <div id="icon">
+                <div id="piastre"><i class="fas fa-dollar-sign"></i> Payez 1,35 $CA ou plus</div>
+                <div id="gens"><i class="fas fa-people-carry"></i> 6 534 Vendus</div>
+                <div id="livre"><i class="fas fa-book-open"></i> Utiliser sur n'importe quel appareil</div>
+                <div id="doc"><i class="fas fa-file"></i> PDF, ePUB et MOBI</div>
+                </div>
+                <fieldset><legend><i class="fas fa-heart"></i></legend>Ce lot à permis de collecter 12 889 $CA pour une association carritative</fieldset>
+                <h2>Valeur de 808,58 $CA payez ce que vous voulez</h2>
+                <p>Payez moins pour obtenir moins d'articles ou payez plus pour donner plus aux éditeurs, à Humble et aux associations carritative.</p>
+                <form id="formulairelots" method="POST" action="#">
+                    <button data-montant="1,35">1,35 $CA</button>
+                    <button>13,54 $CA</button>
+                    <button>24,37 $CA</button>
+                    <button>30 $CA</button>
+                    <button>35 $CA</button>
+                    <button>40 $CA</button>
+                    <button>$CA</button>
+                    <input type="number" placeholder="Autre montant">
+                    <button>Validation</button>
+                </form>
             </div>
         </div> 
         </body>
